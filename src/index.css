@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 font-sans antialiased;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+}
+
+::selection {
+  @apply bg-royal-700 text-white;
+}
+
+/* Mount-fade — runs once on page load, no JS, no flash */
+.motion-fade-up {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUpKf 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.motion-delay-1 { animation-delay: 0.08s; }
+.motion-delay-2 { animation-delay: 0.16s; }
+.motion-delay-3 { animation-delay: 0.24s; }
+.motion-delay-4 { animation-delay: 0.32s; }
+
+@keyframes fadeUpKf {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reveal-on-scroll — triggered by .is-visible class added by IntersectionObserver */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-fade-up,
+  .reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-6 sm:px-8 lg:px-12;
+  }
+  .max-w-page {
+    @apply max-w-7xl mx-auto;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royal-500;
+  }
+  .btn-primary {
+    @apply btn bg-royal-700 text-white hover:bg-royal-800 hover:-translate-y-0.5 shadow-lg shadow-royal-700/20;
+  }
+  .btn-outline {
+    @apply btn border border-royal-700 text-royal-700 hover:bg-royal-700 hover:text-white;
+  }
+  .btn-white {
+    @apply btn bg-white text-royal-900 hover:bg-royal-50 hover:-translate-y-0.5 shadow-xl shadow-royal-950/30;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-royal-700;
+  }
+  .heading {
+    @apply font-display font-bold tracking-tight text-slate-900;
+  }
+  .section {
+    @apply py-24 sm:py-32 container-px;
+  }
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(33, 56, 230, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 56, 230, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.15 0 0 0 0 0.6 0 0 0 0.4 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
