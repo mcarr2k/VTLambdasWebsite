@@ -53,7 +53,7 @@ export default function EBoardCarousel() {
     >
       <div className="grid grid-cols-1 md:grid-cols-5">
         {/* Photo column */}
-        <div className="md:col-span-3 relative bg-slate-100 aspect-[4/5] md:aspect-auto md:min-h-[460px]">
+        <div className="md:col-span-3 relative bg-slate-100 aspect-[4/5] md:aspect-[3/4] md:min-h-[540px]">
           {eboard.map((mem, idx) => (
             <div
               key={mem.name}
@@ -68,6 +68,7 @@ export default function EBoardCarousel() {
                   alt={mem.name}
                   loading={idx === 0 ? 'eager' : 'lazy'}
                   className="absolute inset-0 w-full h-full object-cover"
+                  style={{ objectPosition: '50% 30%' }}
                 />
               ) : (
                 <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-royal-800 to-royal-950 text-white">
