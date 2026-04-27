@@ -2,18 +2,31 @@ import { Instagram, Facebook, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-royal-950 text-royal-100">
+    <footer className="relative overflow-hidden bg-royal-950 text-royal-100 isolate">
       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none" />
+      <img
+        src="/crest.png"
+        alt=""
+        aria-hidden
+        className="absolute -right-24 -bottom-16 w-[420px] max-w-none opacity-[0.06] pointer-events-none select-none hidden md:block"
+        style={{ filter: 'invert(1)', mixBlendMode: 'lighten' }}
+      />
       <div className="relative max-w-page container-px py-20">
         <div className="grid lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <span className="grid place-items-center w-10 h-10 rounded-lg bg-white text-royal-800 font-display font-bold shadow-lg">
-                ΛΦΕ
-              </span>
+            <div className="flex items-center gap-4">
+              <img
+                src="/crest.png"
+                alt="Lambda Phi Epsilon crest"
+                className="w-14 h-14 shrink-0"
+                style={{ filter: 'invert(1)' }}
+              />
               <div className="leading-tight">
                 <div className="font-display font-bold text-white text-lg">Lambda Phi Epsilon</div>
                 <div className="text-xs uppercase tracking-[0.18em] text-royal-300">Beta Zeta Chapter</div>
+                <div className="text-[10px] uppercase tracking-[0.22em] text-royal-400 mt-1 font-display italic">
+                  ἡγεμόνες ἐν ἀνθρώποις εἶναι
+                </div>
               </div>
             </div>
             <p className="mt-6 max-w-md text-royal-200 leading-relaxed">

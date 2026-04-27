@@ -17,6 +17,14 @@ export default function Hero() {
       />
       <div aria-hidden className="absolute inset-0 -z-10 bg-grid opacity-[0.18]" />
       <div aria-hidden className="absolute inset-0 -z-10 bg-noise opacity-30 mix-blend-overlay" />
+      {/* Crest watermark — large, ghosted, behind the headline */}
+      <img
+        src="/crest.png"
+        alt=""
+        aria-hidden
+        className="absolute -z-10 right-[-6%] top-1/2 -translate-y-1/2 w-[55vw] max-w-[720px] opacity-[0.08] pointer-events-none select-none hidden md:block"
+        style={{ filter: 'invert(1)', mixBlendMode: 'lighten' }}
+      />
       <div
         aria-hidden
         className="absolute inset-x-0 bottom-0 -z-10 h-40"
