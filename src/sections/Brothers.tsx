@@ -1,5 +1,5 @@
-import { Linkedin, Instagram } from 'lucide-react';
 import Reveal from '../components/Reveal';
+import EBoardCarousel from '../components/EBoardCarousel';
 import { eboard, roster } from '../data/chapter';
 
 export default function Brothers() {
@@ -31,45 +31,7 @@ export default function Brothers() {
                 </div>
                 <div className="text-xs text-slate-400">{eboard.length} officers</div>
               </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {eboard.map((m) => (
-                  <div
-                    key={m.position}
-                    className="group rounded-2xl bg-white border border-slate-200 p-6 hover:border-royal-300 hover:shadow-sm transition flex flex-col"
-                  >
-                    <div className="text-[10px] uppercase tracking-[0.18em] text-royal-700 font-semibold">
-                      {m.position}
-                    </div>
-                    <div className="mt-2 font-display text-xl text-slate-900">{m.name}</div>
-                    {(m.linkedin || m.instagram) && (
-                      <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2">
-                        {m.linkedin && (
-                          <a
-                            href={m.linkedin}
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label={`${m.name} on LinkedIn`}
-                            className="grid place-items-center w-8 h-8 rounded-lg text-slate-500 hover:text-white hover:bg-royal-800 transition"
-                          >
-                            <Linkedin size={15} />
-                          </a>
-                        )}
-                        {m.instagram && (
-                          <a
-                            href={m.instagram}
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label={`${m.name} on Instagram`}
-                            className="grid place-items-center w-8 h-8 rounded-lg text-slate-500 hover:text-white hover:bg-royal-800 transition"
-                          >
-                            <Instagram size={15} />
-                          </a>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+              <EBoardCarousel />
             </Reveal>
 
             {/* Roster */}

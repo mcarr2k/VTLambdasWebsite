@@ -40,16 +40,17 @@ export default function Navbar() {
     >
       <div className="max-w-page container-px flex items-center justify-between h-16 sm:h-20">
         <a href="#top" className="flex items-center gap-3 group">
-          <span
-            className={[
-              'grid place-items-center w-9 h-9 rounded-lg font-display font-bold text-sm transition-colors',
-              onHero
-                ? 'bg-white/15 text-white border border-white/30 backdrop-blur'
-                : 'bg-royal-800 text-white shadow-md shadow-royal-800/20',
-            ].join(' ')}
-          >
-            ΛΦΕ
-          </span>
+          <img
+            src="/crest.png"
+            alt="Lambda Phi Epsilon crest"
+            width={40}
+            height={40}
+            className="w-10 h-10 shrink-0 transition-[filter] duration-300 group-hover:scale-105"
+            style={{
+              filter: onHero ? 'invert(1)' : 'none',
+              mixBlendMode: onHero ? 'lighten' : 'multiply',
+            }}
+          />
           <span className="hidden sm:flex flex-col leading-tight">
             <span
               className={`font-display font-bold text-base transition-colors ${
