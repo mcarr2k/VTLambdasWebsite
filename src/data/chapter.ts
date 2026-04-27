@@ -26,13 +26,43 @@ export const founding = {
   },
 } as const;
 
-export type EBoardMember = { name: string; position: string };
+export type EBoardMember = {
+  name: string;
+  position: string;
+  linkedin?: string;
+  instagram?: string;
+};
 export const eboard: EBoardMember[] = [
-  { name: 'Kevin Wang', position: 'President' },
-  { name: 'Raymond Lin', position: 'Vice President External' },
-  { name: 'Aayan Chaturvedi', position: 'Vice President Internal' },
-  { name: 'Evan Cardona', position: 'Treasurer' },
-  { name: 'Ethan Melevo', position: 'Secretary' },
+  {
+    name: 'Kevin Wang',
+    position: 'President',
+    // linkedin: 'https://linkedin.com/in/...',
+    // instagram: 'https://instagram.com/...',
+  },
+  {
+    name: 'Jaden Phu',
+    position: 'Vice President External',
+    // linkedin: '',
+    // instagram: '',
+  },
+  {
+    name: 'Aayan Chaturvedi',
+    position: 'Vice President Internal',
+    // linkedin: '',
+    // instagram: '',
+  },
+  {
+    name: 'Evan Cardona',
+    position: 'Treasurer',
+    // linkedin: '',
+    // instagram: '',
+  },
+  {
+    name: 'Ethan Melevo',
+    position: 'Secretary',
+    // linkedin: '',
+    // instagram: '',
+  },
 ];
 
 export type PledgeClass = { name: string; brothers: string[] };
