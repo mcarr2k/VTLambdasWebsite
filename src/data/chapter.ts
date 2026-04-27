@@ -36,32 +36,30 @@ export const eboard: EBoardMember[] = [
   {
     name: 'Kevin Wang',
     position: 'President',
-    // linkedin: 'https://linkedin.com/in/...',
-    // instagram: 'https://instagram.com/...',
+    linkedin: 'https://www.linkedin.com/in/kevin-wang2/',
+    instagram: 'https://www.instagram.com/kevinn.wng/',
   },
   {
     name: 'Jaden Phu',
     position: 'Vice President External',
-    // linkedin: '',
-    // instagram: '',
   },
   {
     name: 'Aayan Chaturvedi',
     position: 'Vice President Internal',
-    // linkedin: '',
-    // instagram: '',
+    linkedin: 'https://www.linkedin.com/in/aayan-chaturvedi/',
+    instagram: 'https://www.instagram.com/aayan_chaturvedi/',
   },
   {
     name: 'Evan Cardona',
     position: 'Treasurer',
-    // linkedin: '',
-    // instagram: '',
+    linkedin: 'https://www.linkedin.com/in/evan-cardona-34007b292/',
+    instagram: 'https://www.instagram.com/cardona.evan/',
   },
   {
     name: 'Ethan Melevo',
     position: 'Secretary',
-    // linkedin: '',
-    // instagram: '',
+    linkedin: 'https://www.linkedin.com/in/ethan-melevo-24460b328/',
+    instagram: 'https://www.instagram.com/ethan.melevo/',
   },
 ];
 
