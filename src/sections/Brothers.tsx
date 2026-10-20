@@ -92,7 +92,7 @@ function rosterIndex(name: string): number {
     'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Mu',
     'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi',
     'Alpha Alpha', 'Alpha Beta', 'Alpha Gamma', 'Alpha Delta', 'Alpha Epsilon',
-    'Alpha Zeta', 'Alpha Eta', 'Alpha Theta', 'Alpha Iota',
+    'Alpha Zeta', 'Alpha Eta', 'Alpha Theta', 'Alpha Iota', 'Alpha Kappa',
   ];
   const i = order.indexOf(name);
   return i === -1 ? 0 : i + 1;
