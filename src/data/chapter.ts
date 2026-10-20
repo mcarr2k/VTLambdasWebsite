@@ -59,7 +59,7 @@ export const eboard: EBoardMember[] = [
   {
     name: 'Luke Montfort',
     position: 'Treasurer',
-    photo: '/eboard/evan.jpeg',
+    photo: '/eboard/luke.jpeg',
     pledgeClass: 'Alpha Theta',
     linkedin: 'https://www.linkedin.com/in/luke-montfort-913529327/?isSelfProfile=true',
     instagram: 'https://www.instagram.com/luke.montfort/',
