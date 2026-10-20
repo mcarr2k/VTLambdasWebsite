@@ -46,7 +46,10 @@ export const eboard: EBoardMember[] = [
   {
     name: 'Indie Viriyakul',
     position: 'Vice President External',
+    photo: '/eboard/indie.jpeg',
     pledgeClass: 'Alpha Theta',
+    linkedin: 'https://www.linkedin.com/in/indie-viriyakul-4687992a9/',
+    instagram: 'https://www.instagram.com/indie_viriyakul/?hl=en',
   },
   {
     name: 'Ethan Melevo',
