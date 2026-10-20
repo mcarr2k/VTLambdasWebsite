@@ -38,7 +38,7 @@ export const eboard: EBoardMember[] = [
   {
     name: 'Jaden Phu',
     position: 'President',
-    photo: '/eboard/kevin.jpeg',
+    photo: '/eboard/jaden.jpeg',
     pledgeClass: 'Alpha Theta',
     linkedin: 'https://www.linkedin.com/in/jaden-phu-9402262b2/?isSelfProfile=false',
     instagram: 'https://www.instagram.com/jadenthephu/',
