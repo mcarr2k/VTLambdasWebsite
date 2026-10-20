@@ -27,7 +27,7 @@ export default function Brothers() {
             <Reveal>
               <div className="flex items-baseline justify-between mb-6">
                 <div className="text-[10px] uppercase tracking-[0.22em] text-royal-700 font-semibold">
-                  Executive Board · 2025–2026
+                  Executive Board · 2026–2027
                 </div>
                 <div className="text-xs text-slate-400">{eboard.length} officers</div>
               </div>
