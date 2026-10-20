@@ -36,7 +36,7 @@ export type EBoardMember = {
 };
 export const eboard: EBoardMember[] = [
   {
-    name: 'Kevin Wang',
+    name: 'Jaden Phu',
     position: 'President',
     photo: '/eboard/kevin.jpeg',
     pledgeClass: 'Alpha Gamma',
