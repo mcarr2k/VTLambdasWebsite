@@ -163,6 +163,7 @@ export const roster: PledgeClass[] = [
     name: 'Alpha Iota',
     brothers: ['Akhil Bandla', 'Ian Lee', 'Christian Truong', 'Renn Blanco', 'James Greear'],
   },
+  { name: 'Alpha Kappa', brothers: ['Louyi Chen', 'Alex Phu'] },
 ];
 
 export const totalBrothers = roster.reduce((n, c) => n + c.brothers.length, 0);
