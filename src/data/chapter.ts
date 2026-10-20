@@ -44,17 +44,17 @@ export const eboard: EBoardMember[] = [
     instagram: 'https://www.instagram.com/jadenthephu/',
   },
   {
-    name: 'Jaden Phu',
+    name: 'Indie Viriyakul',
     position: 'Vice President External',
     pledgeClass: 'Alpha Theta',
   },
   {
-    name: 'Aayan Chaturvedi',
+    name: 'Ethan Melevo',
     position: 'Vice President Internal',
-    photo: '/eboard/aayan.jpeg',
-    pledgeClass: 'Alpha Gamma',
-    linkedin: 'https://www.linkedin.com/in/aayan-chaturvedi/',
-    instagram: 'https://www.instagram.com/aayan_chaturvedi/',
+    photo: '/eboard/ethan.jpeg',
+    pledgeClass: 'Alpha Eta',
+    linkedin: 'https://www.linkedin.com/in/ethan-melevo-24460b328/',
+    instagram: 'https://www.instagram.com/ethan.melevo/',
   },
   {
     name: 'Luke Montfort',
@@ -65,12 +65,12 @@ export const eboard: EBoardMember[] = [
     instagram: 'https://www.instagram.com/luke.montfort/',
   },
   {
-    name: 'Ethan Melevo',
+    name: 'Akhil Bandla',
     position: 'Secretary',
     photo: '/eboard/ethan.jpeg',
-    pledgeClass: 'Alpha Eta',
-    linkedin: 'https://www.linkedin.com/in/ethan-melevo-24460b328/',
-    instagram: 'https://www.instagram.com/ethan.melevo/',
+    pledgeClass: 'Alpha Iota',
+    linkedin: 'https://www.linkedin.com/in/akhilbandla/',
+    instagram: 'https://www.instagram.com/abandla222/',
   },
 ];
 
