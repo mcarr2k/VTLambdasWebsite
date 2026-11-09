@@ -70,7 +70,7 @@ export const eboard: EBoardMember[] = [
   {
     name: 'Akhil Bandla',
     position: 'Secretary',
-    photo: '/eboard/ethan.jpeg',
+    photo: '/eboard/akhil.jpeg',
     pledgeClass: 'Alpha Iota',
     linkedin: 'https://www.linkedin.com/in/akhilbandla/',
     instagram: 'https://www.instagram.com/abandla222/',
